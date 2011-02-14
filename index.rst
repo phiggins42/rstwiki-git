@@ -25,7 +25,7 @@ Inline Examples
 
 Live embedded code blocks. Simple:
 
-.. javascript ::
+.. code :: javascript
 
     for(var i = 0, l = it.length; i < l; i++){
         console.log(this.isRad);

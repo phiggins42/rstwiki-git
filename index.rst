@@ -31,7 +31,7 @@ Live embedded code blocks. Simple:
         console.log(this.isRad);
     }
     
-That wasn't _live_ per se. But I can make thing **bold**
+That wasn't _live_ per se. But I can make things **bold**
 
 Also, there are ways to `really` do custom inline examples:
 

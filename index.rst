@@ -16,9 +16,9 @@ It's silly, but I can :ref:`link to anything <foo/bar>` inline, and do all sorts
 Second Point
 ------------
 
-This is a custom directive:
+This is a custom directive called ``api-link``
 
-.. api-ref :: dojo.query
+.. api-link :: dojo.query
 
 Inline Examples
 ---------------

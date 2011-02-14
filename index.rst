@@ -1,10 +1,10 @@
 .. _index:
 
 ===========
-My Rad Wiki
+rstWiki
 ===========
 
-I think reST is the greatest ever.
+A simple reStructuredText Wiki system. 
 
 .. contents ::
 
@@ -66,4 +66,3 @@ Some headings?
 :muchLonger: See how it aligns
 :o: My that's a short label
 :gee: This is a particularly long cell and blah blah blah blah blah blah blah.
-

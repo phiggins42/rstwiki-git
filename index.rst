@@ -4,68 +4,87 @@
 rstWiki
 ===========
 
-A simple reStructuredText Wiki system. 
+A simple reStructuredText based Wiki application. 
 
 .. contents ::
 
-This is Why
------------
+Yet another wiki?
+----------------------------
 
-It's silly, but I can :ref:`link to anything <foo/bar>` inline, and do all sorts of other crazyness.
+This one is simple. It serves a very specific purpose, though can be mangled very easily into something to suit 
+your needs. 
 
-Second Point
-------------
+rstWiki isn't a `real` wiki, it only pretends to be one. The content for the wiki is, very simply, decoded directly
+from reST files on disk. Ideally, these reST files are stored in some form of VCS. rstWiki [will eventually] 
+support both git and subversion. VC can be turned off to work directly, locally, or whatever. 
 
-This is a custom directive called ``.. api-link :: dojo.query``
+reST is a super powerful yet simple markdown syntax. 
 
-.. api-link :: dojo.query
+But why not use [...]?
+----------------------
 
-Inline Examples
----------------
+Because it was too complicated. 
 
-Live embedded code blocks. Simple:
+The Basics
+----------
 
-.. code :: javascript
+The very most basic of syntax explanations:
 
-    for(var i = 0, l = it.length; i < l; i++){
-        console.log(this.isRad);
-    }
-    
-That wasn't _live_ per se. But I can make things **bold**
+Paragraphs are lines of text separated by a blank link. 
+This will not become a new paragraph. 
 
-Also, there are ways to `really` do custom inline examples:
+But this will.
 
-.. code-example ::
+Formatting inline text: **bold** ... *less bold* ... ``code`` ... `emphasis` ... 
 
-    .. javascript ::
-            
-            <script>
-                alert('win')
-            </script>
-            
-Basic Lists and Shit
---------------------
+A handy reference guide is available: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
-A list:
 
-* one
-* two 
-* three
-    * three one
-    * three two
-    * newly added
-* four
-    * four one
-    * four two
-        * ohhhhh
-    * five 
+Custom Directives
+-----------------
 
-Some headings?
+reST is easily extensible. rstWiki ships a custom ``dojo.py`` module defining several custom directives. One 
+custom directive included in the ability for reST to understand relative links similar to the way a wiki behaves. 
+Sphinx uses these relative references to index content and generate the table of contents. 
+eg: :ref:`this links to some internal wiki page "docs/test" <docs/test>`
 
-:foo: This is a test
-:bar: More testing
-:muchLonger: See how it aligns
-:o: My that's a short label
-:gee: This is a particularly long cell and blah blah blah blah blah blah blah.
+If interested, checkout the :ref:`custom directives mini docs <docs/directives>`
 
-That's all, folks.
+Setup
+-----
+
+Get the code from: http://github.com/phiggins42/rstwiki 
+
+The wiki will run standalone, serving html-rendered-reST data from a configured root path and static files from a 
+defined folder.
+
+First clone and init the submodules for the wiki:
+
+.. code :: shell
+
+    git clone git://github.com/phiggins42/rstwiki.git rstwiki
+    cd rstwiki && git submodule init && git submodule update
+
+Rename the ``conf.sample.py`` to ``conf.py`` and edit as needed. Then run the server:
+
+.. code :: shell
+
+   mv conf.sample.py conf.py && vi conf.py
+   chmod +x wiki.py
+   ./wiki.py
+
+If this doesn't work out of the box or you need advanced setup options checkout the :ref:`advanced setup guide <docs/setup>`
+
+
+Related Items
+-------------
+
+* python >= 2.6
+* Sphinx
+* docutils
+* Pygments
+* python-ldap
+* git, svn
+* CodeMirror
+* CodeGlass
+* Dojo, Dijit, Dojox

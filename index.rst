@@ -48,17 +48,17 @@ Basic Lists and Shit
 
 A list:
 
-    * one
-    * two 
-    * three
-        * three one
-        * three two
-        * newly added
-    * four
-        * four one
-        * four two
-            * ohhhhh
-    * five 
+* one
+* two 
+* three
+  * three one
+  * three two
+  * newly added
+* four
+  * four one
+  * four two
+    * ohhhhh
+  * five 
 
 Some headings?
 

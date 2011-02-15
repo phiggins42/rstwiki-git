@@ -1,4 +1,4 @@
-.. _rstwiki/directives:
+.. _docs/directives:
 
 Directives
 ==========

@@ -5,14 +5,14 @@ Dojo Specific API Extensions
 
 A special ``rst`` processor is included with this wiki to handle some dojo_ documentation needs.
 
-.. contents
+.. contents ::
 
 API Links
 ---------
 
 Include a link to the official API page for some passed function.
 
-.. code ::
+.. code :: bash
 
     .. api-link :: dojo.query
 
@@ -27,7 +27,7 @@ API Inline
 
 It is possible to inline the available API information from another page. 
 
-.. code ::
+.. code :: bash
 
    .. api-inline :: dojo.byId
 

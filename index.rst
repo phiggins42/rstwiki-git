@@ -60,14 +60,14 @@ defined folder.
 
 First clone and init the submodules for the wiki:
 
-.. code :: shell
+.. code :: bash
 
     git clone git://github.com/phiggins42/rstwiki.git rstwiki
     cd rstwiki && git submodule init && git submodule update
 
 Rename the ``conf.sample.py`` to ``conf.py`` and edit as needed. Then run the server:
 
-.. code :: shell
+.. code :: bash
 
    mv conf.sample.py conf.py && vi conf.py
    chmod +x wiki.py

@@ -28,6 +28,21 @@ Then run setuptools (aka ``easy_install``):
 
 And so on for various packages it complains about. There aren't many.
 
+Static Files
+------------
+
+While rstWiki will work with virutally no JavaScript whatsoever, some of the custom directives require in the inclusion of Dojo and CodeGlass (fixme). A source set of utilities are provided in ``_static/docs/``. A Dojo Build profile is located in ``_static/`` as well as a script to kick off a customized Dojo build:
+
+.. code :: bash
+
+    $ cd rstwiki/_static
+    $ chmod +x build.sh
+    $ ./build.sh
+
+This will create a folder in ``_static/release/trunk/``. If you wish you static files to be served from **there**
+you should adjust the variable in ``conf.py``, or simply tell the proxy to redirect from a different root.
+ 
+
 Proxy via Apache
 ----------------
 

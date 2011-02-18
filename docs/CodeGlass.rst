@@ -17,11 +17,8 @@ Kick everything off with a ``.. code-example ::`` block
   .. js ::
  
     <script>
-    dojo.ready(function(){ console.warn("oh hi!"); /* ({{dataUrl}}, {{baseUrl}} */})
+        alert("hi");
     </script>
 
-  .. html ::
-
-    <p>Hi There</p>
 
 That's all, folks.

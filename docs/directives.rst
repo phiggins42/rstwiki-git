@@ -11,7 +11,6 @@ Sample
 The code for the custom directive is simple:
 
 .. code :: python
-    :linenos:
     
     import re
     from docutils import nodes

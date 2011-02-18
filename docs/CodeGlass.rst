@@ -20,5 +20,14 @@ Kick everything off with a ``.. code-example ::`` block
         alert("hi");
     </script>
 
+This throws an exception before onload:
+
+.. code-example ::
+
+  .. js ::
+
+     <script>var x = y</script>
+
+
 
 That's all, folks.

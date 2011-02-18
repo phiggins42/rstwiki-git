@@ -17,16 +17,22 @@ The most basic of examples:
   This is the first bit of inner content of the code example. It is ``light`` markdown. 
 
   .. js ::
- 
+    :label: The JavaScript. Ideally this would be infered from the preceding paragaph. 
     <script>
         dojo.ready(function(){ 
             console.warn(dojo.query("#bar"))
         });
     </script>
 
+  This test is after the js and before some raw html:
+
   .. html ::
      
     <div id="bar"><p>Hi!</p></div>
+
+
+Errors
+------
 
 This throws an exception before onload:
 

@@ -10,15 +10,21 @@ Actually want to rewrite codeglass. This is a test page from rst to ensure lots 
 Basic Usage
 -----------
 
-Kick everything off with a ``.. code-example ::`` block
+The most basic of examples:
 
 .. code-example ::
 
   .. js ::
  
     <script>
-        alert("hi");
+        dojo.ready(function(){ 
+            console.warn(dojo.query("#bar"))
+        });
     </script>
+
+  .. html ::
+     
+    <div id="bar"><p>Hi!</p></div>
 
 This throws an exception before onload:
 

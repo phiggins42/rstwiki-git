@@ -16,7 +16,7 @@ Kick everything off with a ``.. code-example ::`` block
 
   .. js ::
  
-    dojo.ready(function(){ console.warn("oh hi!"); })
+    dojo.ready(function(){ console.warn("oh hi!"); {{dataUrl}} {{baseUrl}} })
 
   .. css :: 
 

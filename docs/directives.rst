@@ -32,3 +32,5 @@ output, or simply injecting formatted reST into the parser stream when encounter
 
 For example, the ``.. api-inline ::`` directive will fetch JSON data from the Dojo Toolkit API documentation 
 export and attempt to inject it into the parser stream. See :ref:`more api-inline examples <docs/dojoapi>` for tests.
+
+Additionally there are :ref:`CodeGlass <docs/CodeGlass>` examples that can be run in a dialog.

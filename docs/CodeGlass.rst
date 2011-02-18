@@ -13,6 +13,8 @@ Basic Usage
 The most basic of examples:
 
 .. code-example ::
+  
+  This is the first bit of inner content of the code example. It is ``light`` markdown. 
 
   .. js ::
  

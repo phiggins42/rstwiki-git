@@ -572,6 +572,8 @@ Testing A Simpler syntax
 
 .. code-example ::
 
+    This code simply waits until DomReady, and searches for <li> elements
+
     .. js ::
    
         dojo.ready(function(){

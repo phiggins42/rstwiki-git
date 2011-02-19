@@ -593,5 +593,8 @@ Testing A Simpler syntax
             </ul>
         </div>
 
+    .. css ::
+
+        ul li { color:green }
 
 That's all, folks.

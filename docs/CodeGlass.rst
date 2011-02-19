@@ -568,11 +568,13 @@ Known Issues
   });
   
 Testing A Simpler syntax
-------------------------
+========================
+
+This is a small example of a more concise syntax. The old version still works for back compat.
 
 .. code-example ::
 
-    This code simply waits until DomReady, and searches for <li> elements
+    Notice the lack of a wrapping <script> element in the ``js`` clause:
 
     .. js ::
    
@@ -583,7 +585,7 @@ Testing A Simpler syntax
             console.log("done");
         });
 
-    This is the markup used:
+    This is the markup used. It's just markup:
 
     .. html ::
     
@@ -595,7 +597,7 @@ Testing A Simpler syntax
             </ul>
         </div>
 
-    And then some basic basic CSS for color
+    And then some basic basic CSS for color. No <style> tag wrapper
 
     .. css ::
 

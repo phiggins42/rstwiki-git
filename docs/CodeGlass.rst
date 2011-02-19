@@ -32,6 +32,18 @@ The most basic of examples:
     <div id="bar"><p>Hi!</p></div>
 
 
+
+.. code-example ::
+
+  Testing a bit of reST in a label  
+
+  .. cv :: javascript
+    :label: Does it ``em`` this?
+
+    <script>alert('hi')</script>
+
+
+
 Errors
 ------
 

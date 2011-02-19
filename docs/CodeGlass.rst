@@ -66,16 +66,8 @@ This throws an exception before onload:
 
      <script>var x = y</script>
 
-============
-Introduction
-============
-
-Dijit's modal Dialog Box simulates a regular GUI dialog box. The contents can be arbitrary HTML, but are most often a form or a short paragraph. The user can close the dialog box without acting by clicking on the X button in the top-right corner.
-
-
-=====
 Usage
-=====
+-----
 
 .. code-block :: javascript
  :linenos:

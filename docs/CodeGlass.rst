@@ -94,8 +94,6 @@ After creating a Dialog, the Dialog (and the underlay) moves itself right behind
  ...
  </body>
 
-
-========
 Examples
 ========
 
@@ -483,9 +481,8 @@ If you want a scrollbar on a dialog, then you need to add width/height to a div 
     <button dojoType="dijit.form.Button" onClick="dijit.byId('sized').show();" type="button">Show me!</button>
 
 
-=============
 Accessibility
-=============
+-------------
 
 Keyboard
 --------

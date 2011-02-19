@@ -7,6 +7,17 @@ Using CodeGlass
 
 Actually want to rewrite codeglass. This is a test page from rst to ensure lots of options are available.
 
+Sample
+------
+
+This is what normal highlighted text looks like:
+
+.. code-block :: javascript
+
+   dojo.ready(function(){
+       alert("hi");
+   })
+
 Basic Usage
 -----------
 

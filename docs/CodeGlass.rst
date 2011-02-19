@@ -555,8 +555,7 @@ Known Issues
 * Dialogs with an iframe as the contents will cause a focus trap and are not supported. This because the dialog code can not traverse within the iframe contents to find all of the focusable elements to know the first and last focusable element within the contents.
 * Dialogs with no focusable items cause problems for screen readers.  If the dialog has no focusable items, set the tabindex="0" on the container element of the text.  This will set focus to that container when the dialog is opened and will cause JAWS to speak the title of the dialog and the user will know that a dialog has been opened.
 
-.. code-block :: javascript
-  :linenos:
+.. code :: javascript
 
   dialogObj = new dijit.Dialog({
       id: 'dialogWithHref',

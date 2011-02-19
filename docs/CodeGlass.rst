@@ -583,6 +583,8 @@ Testing A Simpler syntax
             console.log("done");
         });
 
+    This is the markup used:
+
     .. html ::
     
         <h2>Test<h2>
@@ -593,8 +595,20 @@ Testing A Simpler syntax
             </ul>
         </div>
 
+    And then some basic basic CSS for color
+
     .. css ::
 
         ul li { color:green }
+
+    .. css ::
+
+       <style type="text/css">#main { color:green } /* just to ensure it handles both */</style>
+
+    .. js ::
+
+       <script>console.log("ensuring it handles both")</script>
+
+
 
 That's all, folks.

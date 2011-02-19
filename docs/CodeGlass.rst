@@ -567,7 +567,29 @@ Known Issues
           position:'relative',
   });
   
+Testing A Simpler syntax
+------------------------
 
+.. code-example ::
+
+   .. js ::
+   
+        dojo.ready(function(){
+            dojo.query("li").forEach(function(n){
+                console.log(n);
+            });
+            console.log("done");
+        });
+
+    .. html ::
+    
+        <h2>Test<h2>
+        <div>
+            <p>A list:</p>
+            <ul>
+                <li id="bar">First</li>
+            </ul>
+        </div>
 
 
 That's all, folks.

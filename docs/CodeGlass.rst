@@ -572,7 +572,7 @@ Testing A Simpler syntax
 
 .. code-example ::
 
-   .. js ::
+    .. js ::
    
         dojo.ready(function(){
             dojo.query("li").forEach(function(n){

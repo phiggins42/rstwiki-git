@@ -29,6 +29,12 @@ CV version:
         dojo.byId("bar").innerHTML = "foo!";
     });
 
+CV + LineNos
+
+.. cv :: javascript
+    :linenos:
+
+    // testing 
 
 In A compound:
 

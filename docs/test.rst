@@ -77,7 +77,10 @@ Uses the current ``dojo`` on the page.
 
    <script>
        dojo.ready(function(){
-           dojo.byId("testExample").innerHTML = "Win!";
+           var node = dojo.byId("testExample");
+           dojo.connect(node, "onclick", function(e){
+               node.innerHTML = "Win!"
+           })
        });
    </script>
    <p id="testExample">This is a test. Click me to replace my Content.</p>

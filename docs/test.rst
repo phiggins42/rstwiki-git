@@ -12,6 +12,14 @@ Sample code:
     dojo.ready(function(){
         dojo.byId("bar").innerHTML = "foo!";
     });
+
+Testing a block with line numbers:
+
+.. code :: javascript
+    :linenos:
+    
+    // with line numbers?
+    console.warn("foo");
     
 CV version:
 

@@ -134,7 +134,6 @@ The first example creates a Dialog via markup from an existing DOM node:
         dojo.require("dijit.layout.TabContainer");
         dojo.require("dijit.layout.ContentPane");
         dojo.require("dojo.parser");
-        dojo.addOnLoad(function(){ dojo.parser.parse(); });
     </script>
 
 Note that dialog's source markup can be hidden via specifying style="display: none", to prevent it from flashing on the screen during page load.  However, hiding the dialog indirectly via a class won't work (in that the dialog will remain invisible even when it's supposed to be displayed).

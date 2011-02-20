@@ -67,5 +67,20 @@ Text after the compound block.
     .. cv :: html
 
        <div class="foo">Hi</div> There
+
+Live Inline
+-----------
+
+Uses the current ``dojo`` on the page.
+
+.. live-code ::
+
+   <script>
+       dojo.ready(function(){
+           dojo.byId("testExample").innerHTML = "Win!";
+       });
+   </script>
+   <p id="testExample">This is a test. Click me to replace my Content.</p>
+
     
 That's All, Folks.

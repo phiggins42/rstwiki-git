@@ -29,13 +29,6 @@ CV version:
         dojo.byId("bar").innerHTML = "foo!";
     });
 
-CV + LineNos
-
-.. cv :: javascript
-    :linenos:
-
-    // testing 
-
 In A compound:
 
 .. code-example::
@@ -45,10 +38,14 @@ In A compound:
     .. cv :: javascript
     
         dojo.ready(function(){
-            dojo.byId("bar").innerHTML = "foo!";
+            dojo.byId("bar").innerHTML = "<p>after!</p>";
         });
         
-    Text in the compound after JS
+    Text in the compound after JS (example throws if id='bar' unfound ...
+
+    .. html ::
+
+        <div id="bar"><p>before</p></div>
 
 Text after the compound block.
 

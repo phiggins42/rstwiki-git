@@ -77,6 +77,26 @@ Uses the current ``dojo`` on the page.
 
    <script>
        dojo.ready(function(){
+           // these are a bunch of comment lines to force wrapping
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
+           //
            var node = dojo.byId("testExample");
            dojo.connect(node, "onclick", function(e){
                node.innerHTML = "Win!"

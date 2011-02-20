@@ -15,7 +15,9 @@ This is what normal highlighted text looks like:
 .. code-block :: javascript
 
    dojo.ready(function(){
-       alert("hi");
+       setTimeout(function(){
+           alert("hi");
+       }, 750);
    })
 
 Basic Usage
@@ -32,7 +34,7 @@ The most basic of examples:
  
     <script>
         dojo.ready(function(){ 
-            console.warn(dojo.query("#bar"))
+            console.warn(dojo.query("#bar").style("color","green"))
         });
     </script>
 
@@ -131,6 +133,8 @@ The first example creates a Dialog via markup from an existing DOM node:
         dojo.require("dijit.Dialog");
         dojo.require("dijit.layout.TabContainer");
         dojo.require("dijit.layout.ContentPane");
+        dojo.require("dojo.parser");
+        dojo.addOnLoad(function(){ dojo.parser.parse(); });
     </script>
 
 Note that dialog's source markup can be hidden via specifying style="display: none", to prevent it from flashing on the screen during page load.  However, hiding the dialog indirectly via a class won't work (in that the dialog will remain invisible even when it's supposed to be displayed).
@@ -602,6 +606,9 @@ This is a small example of a more concise syntax. The old version still works fo
     .. css ::
 
         ul li { color:green }
+        
+    These next two directive ensure the old syntax always works, and also shows unlabeled directives 
+    next to one another (has special margin considerations)
 
     .. css ::
 

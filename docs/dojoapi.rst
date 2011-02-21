@@ -35,6 +35,23 @@ Will produce:
 
 .. api-inline :: dojo.byId
 
+Reduced API Samples
+-------------------
+
+There is a way to only show parts of some API information. If there are no additional arguments, everything is shown. Pass any additional arguments, and only those items are shown. They are based on their ``jsdoc`` keywords, like **example:**
+
+For example, this will only show the ``examples`` section of the API doc:
+
+.. code-block :: javascript
+
+  .. api-inline :: dojo.byId
+     :examples:
+
+Running:
+
+.. api-inline :: dojo.byId
+    :examples:  
+
 CodeGlass
 ---------
 

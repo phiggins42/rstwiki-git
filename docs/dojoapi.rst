@@ -47,10 +47,30 @@ For example, this will only show the ``examples`` section of the API doc:
   .. api-inline :: dojo.byId
      :examples:
 
-Running:
+Output is:
 
 .. api-inline :: dojo.byId
     :examples:  
+
+Adding ``:no-titles:`` makes it only output the raw for whatever part. 
+
+.. api-inline :: dojo.byId
+    :no-titles:
+    :examples:
+    :signature:
+
+Just a signature:
+
+.. api-inline :: dojo.byId
+    :signature:
+    :no-titles:
+
+Just Some long signature information, with a ``Parameters`` heading:
+
+.. api-inline :: dojo.byId
+    :longsignature:
+
+Caching is in place. The first hit to the API info is a network request. That is saved, so multiple ``api-inline`` directives within the same page (and within a running instance before restart) will all use the same cache.
 
 CodeGlass
 ---------

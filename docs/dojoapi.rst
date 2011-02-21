@@ -75,6 +75,24 @@ Just Some long signature information, with a ``Parameters`` heading:
 
 Caching is in place. The first hit to the API info is a network request. That is saved, so multiple ``api-inline`` directives within the same page (and within a running instance before restart) will all use the same cache.
 
+dojo.query
+==========
+
+.. api-inline :: dojo.query
+    :no-titles:
+
+dojo.NodeList
+=============
+
+.. api-inline :: dojo.NodeList
+
+dojo.forEach
+============
+
+.. api-inline :: dojo.forEach
+
+
+
 CodeGlass
 ---------
 

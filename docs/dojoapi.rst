@@ -52,6 +52,9 @@ Output is:
 .. api-inline :: dojo.byId
     :examples:  
 
+Just Examples and a signature
+------------------------------
+
 Adding ``:no-titles:`` makes it only output the raw for whatever part. 
 
 .. api-inline :: dojo.byId
